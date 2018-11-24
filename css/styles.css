@@ -159,7 +159,7 @@
  	}
 
  	.hero h1{
- 		font: bold 60px 'Open Sans', sans-serif;
+ 		font: bold 6vw 'Open Sans', sans-serif;
  		margin-bottom: 15px;
  	}
 
@@ -395,7 +395,7 @@
 	@media (max-width: 800px){
 
 		.hero h1{
-			font-size: 48px;
+			font-size: 9vw;
 		}
 
 		.hero h3{
