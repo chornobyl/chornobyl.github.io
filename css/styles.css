@@ -319,8 +319,7 @@
  	footer p{
  		text-transform: uppercase;
  		font-size: 14px;
- 		color: rgba(255,255,255,0.6);
- 		margin-bottom: 10px;
+ 		color: white;
  	}
 
  	footer p a{
