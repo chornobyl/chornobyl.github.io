@@ -1,0 +1,11 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans|PT+Sans+Caption:400,700&subset=latin,cyrillic);
+html, body{margin:0; padding:0;}
+body{font-family: 'PT Sans', sans-serif; font-size:14px; color: black; background:#F5F5F5; min-width:380px;}
+img{border:0;}
+:focus{outline:none;}
+.clear{clear:both;}
+a{color:#091926; text-decoration:none;}
+
+.header{height:50px; line-height:50px; text-align:left; color:white; font-size:26px; padding-left:15px; background:black; }
+.header a{color:white;}
+
