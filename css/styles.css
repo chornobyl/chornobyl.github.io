@@ -1,0 +1,440 @@
+/*-------------
+ 	General
+ 	-------------*/
+
+ 	*{
+ 		margin: 0;
+ 		padding: 0;
+ 		box-sizing: border-box;
+ 	}
+
+ 	html{
+ 		font: normal 16px 'Quicksand';
+ 		color: #fff;
+ 	}
+
+ 	ul, nav{
+ 		list-style: none;
+ 	}
+
+ 	a{
+ 		text-decoration: none;
+ 		color: inherit;
+ 		cursor: pointer;
+
+ 		opacity: 0.9;
+ 	}
+
+ 	a:hover{
+ 		opacity: 1;
+ 	}
+
+ 	a.btn{
+ 		color: #fff;
+ 		border-radius: 4px;
+ 		text-transform: uppercase;
+ 		background-color: orange;
+ 		font-weight: 800;
+ 		text-align: center;
+ 	}
+
+ 	hr{
+ 		width: 150px;
+ 		height: 2px;
+ 		background-color: orange;
+ 		border: 0;
+ 		margin-bottom: 80px;
+ 	}
+
+ 	section{
+ 		display: flex;
+ 		flex-direction: column;
+ 		align-items: center;
+ 		background-color: #333;
+ 		padding: 125px 100px;
+ 	}
+
+ 	section h3.title{
+ 		color: #fff;
+ 		text-transform: capitalize; 
+ 		font: bold 32px 'Open Sans', sans-serif;
+ 		margin-bottom: 35px;
+ 		text-align: center;
+ 	}
+
+ 	section p{
+ 		max-width: 800px;
+ 		text-align: center;
+ 		margin-bottom: 35px;
+ 		padding: 0 20px;
+ 		line-height: 2;
+ 	}
+
+ 	ul.grid{
+ 		width: 100%;
+ 		display: flex;
+ 		flex-wrap: wrap;
+ 		justify-content: center;
+ 	}
+
+
+/*-------------
+ 	Header
+ 	-------------*/
+
+ 	header{
+ 		position: absolute;
+ 		top: 0;
+ 		left: 0;
+ 		z-index: 10;
+ 		width: 100%;
+ 		display: flex;
+ 		justify-content: space-between;
+ 		align-items: center;
+ 		color: #fff;
+ 		padding: 35px 100px 0;
+ 	}
+
+ 	header h2{
+ 		font-family: 'Quicksand', sans-serif;
+ 	}
+
+ 	header nav{
+ 		display: flex;
+ 	}
+
+ 	header nav a{
+ 		margin: 0 15px;
+ 	}
+
+ 	header nav a:first-child{
+ 		margin-left: 0;	
+ 	}
+
+ 	header nav a:last-child{
+ 		margin-right: 0;	
+ 	}
+
+/*----------------
+ 	Hero Section
+ 	----------------*/
+
+ 	.hero{
+ 		justify-content: center;
+ 		min-height: 100vh;
+ 		color: #fff;
+ 		text-align: center;
+ 		position: relative;
+ 		overflow: hidden;
+ 		background: rgba(0, 0, 0, 0.5) url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4zwABjDACQwCqAEkZsggAb94CBcYDBvUAAAAASUVORK5CYII=") !important;
+ 		color: #fff;
+ 		font-family: 'Raleway', sans-serif;
+ 		font-weight: 700;
+ 		text-transform: uppercase;
+ 		text-align: center;
+ 		line-height: 100vh;
+ 	}
+
+ 	.hero .background-image{
+ 		position: absolute;
+ 		top: 50%;
+ 		left: 50%;
+ 		width: auto;
+ 		min-width: 100%;
+ 		height: auto;
+ 		min-height: 100%;
+ 		transform: translateX(-50%) translateY(-50%);
+ 		z-index: -1;
+ 	}
+
+ 	.hero .background-image:after{
+ 		content: '';
+ 		position: absolute;
+ 		top: 0;
+ 		left: 0;
+ 		width: 100%;
+ 		height: 100%;
+ 		background-color: #333;
+ 		opacity: 0.99;
+ 	}
+
+ 	.hero h1{
+ 		font: bold 60px 'Open Sans', sans-serif;
+ 		margin-bottom: 15px;
+ 	}
+
+ 	.hero h3{
+ 		font: normal 28px 'Open Sans', sans-serif;
+ 		margin-bottom: 40px;
+ 	}
+
+ 	.hero a.btn{
+ 		padding: 20px 46px;
+ 	}
+
+/*--------------------
+ 	Our Work Section
+ 	---------------------*/
+
+ 	.our-work .grid li{
+ 		padding: 20px;
+ 		height: 350px;
+ 		border-radius: 3px;
+
+ 		background-clip: content-box;
+ 		background-size: cover;
+ 		background-position: center;
+ 		background-color: #333;
+
+ 		-webkit-filter: grayscale(100%);
+ 		-moz-filter: grayscale(100%);
+ 		-ms-filter: grayscale(100%);
+ 		-o-filter: grayscale(100%);
+ 		filter: grayscale(100%);
+ 		filter: gray; /* IE 6-9 */
+ 		/*Добавим вот такой вот код*/
+ 		-webkit-transition: all 1s;
+ 		-moz-transition: all 1s;
+ 		-o-transition: all 1s;
+ 		transition: all 1s;
+ 	}
+
+ 	.our-work .grid li:hover{
+ 		-webkit-filter: none;
+ 		-moz-filter: none;
+ 		-ms-filter: none;
+ 		-o-filter: none;
+ 		filter: none;
+ 	}
+
+ 	.our-work .grid li.small{
+ 		flex-basis: 40%;
+ 	}
+
+ 	.our-work .grid li.large{
+ 		flex-basis: 60%;
+ 	}
+
+/*----------------------
+ 	Features Section
+ 	----------------------*/
+
+ 	.features{
+ 		background-color: #222;
+ 	}
+
+ 	.features .grid li{
+ 		padding: 0 30px;
+ 		flex-basis: 33%;
+ 		text-align: center;
+ 	}
+
+ 	.features .grid li i{
+ 		font-size: 50px;
+ 		color: #2196F3;
+ 		margin-bottom: 25px;
+ 	}
+
+ 	.features .grid li h4{
+ 		color: #555;
+ 		font-size: 20px;
+ 		margin-bottom: 25px;
+ 	}
+
+ 	.features .grid li p{
+ 		margin: 0;
+ 	}
+
+/*--------------------
+ 	Reviews Section
+ 	--------------------*/
+
+ 	.reviews{
+ 		background-color: #333;
+ 	}
+
+ 	.reviews .quote{
+ 		text-align: center;
+ 		width: 80%;
+ 		font-size: 22px;
+ 		font-weight: 300;
+ 		line-height: 1.5;
+ 		margin-bottom: 20px;
+ 		padding: 0;
+ 	}
+
+ 	.reviews .author{
+ 		font-size: 18px;
+ 		margin-bottom: 50px;
+ 	}
+
+ 	.reviews .author:last-child{
+ 		margin-bottom: 0;
+ 	}
+
+/*---------------------
+ 	Contact Section
+ 	---------------------*/
+
+ 	.contact{
+ 		background-color: #222;
+ 	}
+
+ 	.contact form{
+ 		display: flex;
+ 		align-items: center;
+ 		justify-content: center;
+ 		flex-wrap: wrap;
+
+ 		max-width: 800px;
+ 		width: 80%;
+ 	}
+
+ 	.contact form input{
+ 		padding: 15px;
+ 		flex: 1;
+ 		margin-right: 30px;
+ 		font-size: 18px;
+ 		color: #555;
+ 	}
+
+ 	.contact form .btn{
+ 		padding: 18px 42px;
+ 	}
+
+/*-------------
+ 	Footer
+ 	-------------*/
+
+ 	footer{
+ 		display: flex;
+ 		flex-direction: column;
+ 		align-items: center;
+ 		text-align: center;
+ 		color: #fff;
+ 		background-color: #333;
+ 		padding: 60px 0;
+ 	}
+
+ 	footer p{
+ 		text-transform: uppercase;
+ 		font-size: 14px;
+ 		color: rgba(255,255,255,0.6);
+ 		margin-bottom: 10px;
+ 	}
+
+ 	footer p a{
+ 		color: #fff;
+ 	}
+
+ 	.back-top {
+ 		position: fixed;
+ 		bottom: 80px;
+ 		right: 40px;
+ 		z-index: 9999;
+ 		width: 30px;
+ 		height: 30px;
+ 		text-align: center;
+ 		line-height: 30px;
+ 		background: orange;
+ 		color: white;
+ 		cursor: pointer;
+ 		border-radius: 2px;
+ 		display: none;
+ 	}
+
+ 	.back-top:hover {
+ 		background: black;
+ 	}
+
+ 	.back-top-show {
+ 		display: block;
+ 	}
+
+/*--------------
+	MEDIA
+	--------------*/
+
+	@media (max-width: 1000px){
+
+		section{
+			padding: 100px 50px;
+		}
+
+		header{
+			padding: 20px 50px;
+		}
+
+		.our-work .grid li.small,
+		.our-work .grid li.large{
+			flex-basis: 100%;
+		}
+
+		.reviews .quote{
+			font-size: 20px;
+		}
+
+		.reviews .author{
+			font-size: 16px;
+		}
+
+		.features .grid li{
+			flex-basis: 70%;
+			margin-bottom: 65px;
+		}
+
+		.features .grid li:last-child{
+			margin-bottom: 0;
+		}
+		
+		.back-top{
+			right: 10px;
+		}
+	}
+
+	@media (max-width: 800px){
+
+		.hero h1{
+			font-size: 48px;
+		}
+
+		.hero h3{
+			font-size: 24px;
+		}
+
+		.hero a.btn{
+			padding: 15px 40px;
+		}
+
+		.contact form input{
+			flex-basis: 100%;
+			margin: 0 0 20px 0;
+		}
+
+	}
+
+	@media (max-width: 700px){
+		header{
+			flex-direction: column;		
+		}
+
+		header h2{
+			margin-bottom: 15px;
+		}
+
+		footer{
+			padding: 80px 15px;
+		}
+	}
+
+	@media (max-width: 600px){
+
+		section{
+			padding: 80px 30px;
+		}
+
+		.features .grid li{
+			flex-basis: 100%;
+		}
+
+	}

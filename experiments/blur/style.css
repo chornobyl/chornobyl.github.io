@@ -1,8 +1,0 @@
-html, body{margin:0; padding:0;}
-body{font-family:Arial, Tahoma, Verdana; font-size:14px; color: black; background:white;}
-img{border:0;}
-:focus{outline:none;}
-.clear{clear:both;}
-
-.hue{display:block; width:100%; height:auto;}
-.text{height:300px; line-height:300px; position:absolute; width:100%; text-align:center; font-size:24px; color:white; font-weight:bold; z-index:10; text-shadow:1px 1px 1px rgba(0,0,0,0.5); display:none;}
