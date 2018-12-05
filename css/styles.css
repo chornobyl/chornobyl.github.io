@@ -5,7 +5,7 @@
  	}
 
  	html{
- 		font: normal 16px 'Quicksand';
+ 		font: normal 16px 'Quicksand', sans-serif;
  		color: #fff;
  	}
 
@@ -151,7 +151,7 @@
  	}
 
  	.hero h3{
- 		font: normal 28px 'Open Sans', sans-serif;
+ 		font: normal 1.9vw 'Open Sans', sans-serif;
  		margin-bottom: 40px;
  	}
 
@@ -354,11 +354,11 @@
 	@media (max-width: 992px){
 
 		.hero h1{
-			font-size: 48px;
+			font-size: 8vw;
 		}
 
 		.hero h3{
-			font-size: 24px;
+			font-size: 6.5vw;
 		}
 
 		.hero a.btn{
